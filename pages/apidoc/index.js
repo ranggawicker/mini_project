@@ -16,13 +16,13 @@ export default function index() {
 
                             </MDBCardTitle>
                             <MDBCardText>
-                                <small>POST :  http://localhost:3200/api/</small>
+                                <small>POST :  http://localhost:3000/api/</small>
                             </MDBCardText>
                             <MDBCardText>
-                                <small>GET :  http://localhost:3200/api/</small>
+                                <small>GET :  http://localhost:3000/api/</small>
                             </MDBCardText>
                             <MDBCardText>
-                                <small>DELETE :  http://localhost:3200/api/</small>
+                                <small>DELETE :  http://localhost:3000/api/</small>
                             </MDBCardText>
                         </MDBCardBody>
                     </MDBCol>
