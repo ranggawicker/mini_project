@@ -17,7 +17,7 @@ import {
   } from 'mdb-react-ui-kit';
 
 export default function header() {
-    const [showState, useShowState] = useState(false);
+    const [showBasic, setShowBasic] = useState(false);
 
   return (
     <MDBNavbar expand='lg' light bgColor='light'>
@@ -64,17 +64,17 @@ export default function header() {
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem>
-                    <a class="dropdown-item" href="/fetching-api/csr">CSR</a>
+                    <a class="dropdown-item" href="/apifetch/csr">CSR</a>
                   </MDBDropdownItem>
                   <MDBDropdownItem>
-                    <a class="dropdown-item" href="/fetching-api/ssrAndcsr">SSR AND CSR</a>
+                    <a class="dropdown-item" href="/apifetch/ssrcsr">SSR AND CSR</a>
                   </MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
 
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='/dokumen-api'>
+              <MDBNavbarLink active aria-current='page' href='/apidoc'>
                 API
               </MDBNavbarLink>
             </MDBNavbarItem>

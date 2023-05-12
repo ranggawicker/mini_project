@@ -6,7 +6,7 @@ import { MDBCard, MDBCardTitle,
          MDBCardImage, MDBRow, MDBCol, 
          MDBContainer } from 'mdb-react-ui-kit';
 
-export default function ssr() {
+export default function ssr(props) {
   return (
     <div>
             <Header />
