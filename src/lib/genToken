@@ -1,0 +1,24 @@
+import jwt from 'jsonwebtoken'
+
+export
+const generateToken = (data, expiresIn = '1d') => {
+    return jwt.sign(
+        data,
+        process.env.SECRET ?? 'M!n!project',
+        {
+            expiresIn: expiresIn
+        }
+    )
+}
+
+export const decodeToken = (token) => {
+    try{
+        return jwt.verify(
+            token,
+            process.env.SECRET ??
+            'M!n!project'
+        )
+    }catch(err){
+        return null
+    }
+}
